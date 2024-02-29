@@ -1,10 +1,10 @@
-package main
+package ejercicio2
 
 func main() {
 
 }
 
-func calcularPromedio(numeros ...float32) (float32, string) {
+func CalcularPromedio(numeros ...float32) (float32, string) {
 	var suma float32
 	for _, numero := range numeros {
 		if numero < 0 {

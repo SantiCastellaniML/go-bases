@@ -1,4 +1,4 @@
-package main
+package ejercicio4
 
 const (
 	minimum = "minimum"
@@ -9,7 +9,7 @@ const (
 func main() {
 	nums := []float32{1, 2, 3, 4, 5}
 
-	fn, err := operation(minimum)
+	fn, err := Operation(minimum)
 
 	if err != "" {
 		println(err)
@@ -21,7 +21,7 @@ func main() {
 	println(result)
 }
 
-func operation(operation string) (func([]float32) float32, string) {
+func Operation(operation string) (func([]float32) float32, string) {
 	switch operation {
 	case minimum:
 		return min, ""

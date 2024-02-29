@@ -1,7 +1,7 @@
 package main
 
 import (
-	"../internal/calculator"
+	"internal/calculator"
 )
 
 func main() {

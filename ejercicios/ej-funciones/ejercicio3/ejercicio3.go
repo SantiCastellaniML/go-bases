@@ -1,22 +1,28 @@
-package main
+package ejercicio3
+
+const (
+	SalaryA = 3000.0
+	SalaryB = 1500.0
+	SalaryC = 1000.0
+)
 
 func main() {
 
 }
 
-func calcularSalario(minutos int, categoria string) (salario float32, err string) {
+func CalcularSalario(minutos int, categoria string) (salario float32, err string) {
 	var minSalary float32
 	switch categoria {
 	case "C":
-		minSalary = 1000.0 / 60
+		minSalary = SalaryC / 60
 		return minSalary * float32(minutos), ""
 	case "B":
-		minSalary = 1500.0 / 60
+		minSalary = SalaryB / 60
 		salary := minSalary * float32(minutos)
 		salary *= 1.2
 		return salary, ""
 	case "A":
-		minSalary = 3000.0 / 60
+		minSalary = SalaryA / 60
 		salary := minSalary * float32(minutos)
 		salary *= 1.5
 		return salary, ""

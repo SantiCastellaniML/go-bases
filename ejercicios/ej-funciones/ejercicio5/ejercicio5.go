@@ -1,4 +1,4 @@
-package main
+package ejercicio5
 
 import "fmt"
 
@@ -14,14 +14,14 @@ const (
 )
 
 func main() {
-	animalDog, msg := animal(dog)
+	animalDog, msg := Animal(dog)
 
 	if msg != "" {
 		println(msg)
 		return
 	}
 
-	animalCat, msg := animal(cat)
+	animalCat, msg := Animal(cat)
 
 	if msg != "" {
 		println(msg)
@@ -37,7 +37,7 @@ func main() {
 	fmt.Println("Total amount: ", float32(amount/1000), "Kg")
 }
 
-func animal(animal string) (func(int) int, string) {
+func Animal(animal string) (func(int) int, string) {
 	var animalFunc func(int) int
 	switch animal {
 	case dog:
