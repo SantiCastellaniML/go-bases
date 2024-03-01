@@ -1,8 +1,8 @@
 package main
 
-import (
-	"internal/calculator"
-)
+import "bases/clases/03-funciones/internal/calculator"
+
+//	"internal/calculator"
 
 func main() {
 
