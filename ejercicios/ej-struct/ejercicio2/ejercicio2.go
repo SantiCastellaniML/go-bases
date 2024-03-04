@@ -11,7 +11,7 @@ type Person struct {
 type Employee struct {
 	ID       int
 	Position string
-	Subject  Person
+	Person
 }
 
 func (e Employee) PrintEmployee() {
@@ -23,13 +23,12 @@ func (p Person) String() string {
 }
 
 func (e Employee) String() string {
-	return fmt.Sprintf("ID: %d, Position: %s, Subject: [%s]", e.ID, e.Position, e.Subject)
-
+	return fmt.Sprintf("ID: %d, Position: %s, Personal data: [%d, %s, %s]", e.ID, e.Position, e.Person.ID, e.Name, e.DateOfBirth)
 }
 
 func main() {
 	p := Person{1, "Santiago", "16/08/2001"}
-	e := Employee{1, "Developer", p}
+	e := Employee{1500, "Developer", p} //no hay forma de distinguir este ID del otro, por eso se pone e.Person.ID para mostrar ese.
 
 	e.PrintEmployee()
 }

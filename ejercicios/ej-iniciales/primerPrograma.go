@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+type Coso int
+
 func main() {
 	//ejercicio 1:
 	/*

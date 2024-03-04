@@ -2,10 +2,9 @@ package main
 
 import "bases/clases/03-funciones/internal/calculator"
 
-//	"internal/calculator"
+//	"base/clases/03-funciones/internal/calculator"
 
 func main() {
-
 	a, b := 10, 5
 
 	//division
